@@ -1,97 +1,92 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+### 3. README cho Mobile App (React Native)
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+File này dựa trên template chuẩn của React Native và đã được tùy chỉnh cho dự án của bạn.
 
-## Step 1: Start Metro
+```markdown
+# FoodLink Mobile
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+Ứng dụng di động của dự án FoodLink, được phát triển bằng **React Native**.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## 🚀 Bắt đầu
 
-```sh
-# Using npm
-npm start
+Hướng dẫn này sẽ giúp bạn cài đặt môi trường và chạy ứng dụng trên máy ảo hoặc thiết bị thật.
 
-# OR using Yarn
-yarn start
-```
+### 📋 Yêu cầu cài đặt
 
-## Step 2: Build and run your app
+Hãy chắc chắn rằng bạn đã hoàn thành hướng dẫn **Set Up Your Environment** của React Native trước khi tiếp tục. Các yêu cầu chính bao gồm:
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+*   Node.js (LTS) & Watchman
+*   Java Development Kit (JDK)
+*   Android Studio & Android SDK
+*   Xcode (cho macOS) & CocoaPods
 
-### Android
+### 🔧 Cài đặt
 
-```sh
-# Using npm
-npm run android
+1.  **Clone repository**
+    ```sh
+    git clone <your-mobile-repo-url>
+    cd FoodLinkMobile
+    ```
 
-# OR using Yarn
-yarn android
-```
+2.  **Cài đặt dependencies**
+    Sử dụng npm:
+    ```sh
+    npm install
+    ```
+    Hoặc sử dụng Yarn:
+    ```sh
+    yarn install
+    ```
 
-### iOS
+3.  **Cài đặt cho iOS**
+    Di chuyển vào thư mục `ios` và cài đặt các Pods:
+    ```sh
+    cd ios && pod install
+    ```
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+### 🏃 Chạy ứng dụng
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+**Lưu ý:** Trước khi chạy ứng dụng, bạn cần khởi động Metro bundler.
 
-```sh
-bundle install
-```
+1.  **Khởi động Metro**
+    ```sh
+    # Sử dụng npm
+    npm start
 
-Then, and every time you update your native dependencies, run:
+    # Hoặc sử dụng Yarn
+    yarn start
+    ```
 
-```sh
-bundle exec pod install
-```
+2.  **Chạy trên Android hoặc iOS**
+    Mở một cửa sổ terminal mới tại thư mục gốc của dự án và chạy lệnh tương ứng:
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+    *   **Android**
+        ```sh
+        # Sử dụng npm
+        npm run android
 
-```sh
-# Using npm
-npm run ios
+        # Hoặc sử dụng Yarn
+        yarn android
+        ```
 
-# OR using Yarn
-yarn ios
-```
+    *   **iOS**
+        ```sh
+        # Sử dụng npm
+        npm run ios
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+        # Hoặc sử dụng Yarn
+        yarn ios
+        ```
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+Nếu mọi thứ được thiết lập chính xác, bạn sẽ thấy ứng dụng chạy trên máy ảo Android, iOS Simulator hoặc thiết bị đã kết nối.
 
-## Step 3: Modify your app
+### ✨ Bắt đầu đóng góp
 
-Now that you have successfully run the app, let's make changes!
+Bây giờ bạn đã sẵn sàng để chỉnh sửa và phát triển ứng dụng! Mở file `App.tsx` và bắt đầu code. Tính năng **Fast Refresh** sẽ tự động cập nhật ứng dụng khi bạn lưu file.
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Chúc team của bạn có một trải nghiệm phát triển dự án suôn sẻ!
+<!--
+[PROMPT_SUGGESTION]Tạo giúp tôi một file CONTRIBUTING.md với các quy tắc đóng góp cơ bản cho dự án.[/PROMPT_SUGGESTION]
+[PROMPT_SUGGESTION]Làm thế nào để tôi có thể thiết lập CI/CD cho cả ba dự án này với GitHub Actions?[/PROMPT_SUGGESTION]
+-->
